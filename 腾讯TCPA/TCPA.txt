@@ -1,0 +1,50 @@
+
+TCPA正式发布公告
+
+作者：单卫
+
+ 
+
+腾讯内部使用的TCPA，现在OPEN出来。
+
+基于RHEL7.4源码，定制化的TCPA。
+
+站长、个人、企业均可以免费使用，对，完全免费，免费，免费！
+
+ 
+
+WHAT？ 不知道TCPA是什么？
+
+点击TCPA和BBR测试对比报告，快速了解下！
+
+
+一.下载体验地址：
+1.定制的内核
+链接：https://share.weiyun.com/5AeyuFg 密码：d1swc1
+
+2.TCPA安装包
+链接：https://share.weiyun.com/5RAyh7c 密码：qeetzp
+
+ 
+
+欢迎试用，使用疑问请联系davidshan@tencent.com
+
+二.使用方法：
+安装内核
+rpm –ivh kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.rpm
+
+reboot //必须重启才能生效。
+ 
+
+解压TCPA
+tar jxvf tcpa_packets_180619_1151.tar.bz2
+
+cd tcpa_packets
+
+sh install.sh //会安装到/usr/local/storage/tcpav2 下面。
+
+cd /usr/local/storage/tcpav2
+ 
+
+启用TCPA(默认只加速80,443,8080这3个端口)
+sh start.sh
