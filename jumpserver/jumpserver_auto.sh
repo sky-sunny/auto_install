@@ -162,7 +162,7 @@ exit 0
 EOF
 
 echo >> /etc/rc.local
-echo "bash -x /opt/start_jms.sh  >> /root/auto_on_jump.log" /etc/rc.local
+echo "sh /opt/start_jms.sh  >> /root/auto_on_jump.log" /etc/rc.local
 chmod +x /etc/rc.local
 
 
